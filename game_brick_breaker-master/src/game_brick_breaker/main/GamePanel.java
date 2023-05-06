@@ -86,12 +86,12 @@ public class GamePanel extends JPanel implements Runnable{
 
             //giảm tốc độ bóng
             if(ball.getX() < mousex + paddle.getWidth()/4 ){
-                ball.setDX(ball.getDX()- 1.5);
+                ball.setDX(ball.getDX()- 1.0);
             }
 
             //tăng tốc độ bóng
             if(ball.getX() < mousex + paddle.getWidth() && ball.getX() > mousex + paddle.getWidth() / 4){
-                ball.setDX(ball.getDX()+ 1.5);
+                ball.setDX(ball.getDX()+ 1.0);
             }
 
 
